@@ -1,6 +1,5 @@
 function LikeButton() {
     const [liked , setLiked] = React.useState(false);
-    console.log(typeof(liked));
     // 초기값과 함께 컴포넌트의 상탯값을 정의한다. 
     // 여기서 React 변수는 react.development.js 파일에서의 전역 변수로 생성
     const text = liked ? '좋아요 취소 ' : '좋아요';
