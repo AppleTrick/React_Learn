@@ -1,6 +1,6 @@
 function LikeButton() {
     const [liked , setLiked] = React.useState(false);
-    console.log(setLiked);
+    console.log(typeof(liked));
     // 초기값과 함께 컴포넌트의 상탯값을 정의한다. 
     // 여기서 React 변수는 react.development.js 파일에서의 전역 변수로 생성
     const text = liked ? '좋아요 취소 ' : '좋아요';
@@ -12,8 +12,17 @@ function LikeButton() {
         text,
     );
 }
-const domContainter = document.querySelector('#react-root');
-// html 에 만들어두었던 돔요소를 가지고 온다,
-ReactDOM.render(React.createElement(LikeButton),domContainter);
-// react-domContainter.development 파일에서 전역 변수로 만든 ReactDOM 변수를
-// 사용해서 만든 컴포넌트를 react-dom 요소에 붙힌다
+
+ReactDOM.render(
+    React.createElement(LikeButton),document.querySelector('#react-root1'),
+);
+
+
+ReactDOM.render(
+    React.createElement(LikeButton),document.querySelector('#react-root2'),
+);
+
+
+ReactDOM.render(
+    React.createElement(LikeButton),document.querySelector('#react-root3'),
+);
