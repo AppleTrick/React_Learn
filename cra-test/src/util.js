@@ -2,4 +2,5 @@ export function addNumber(a,b){
     return a+b;
 }
 
-// 실패하는 코드
+// return a 실패하는 코드
+// return a + b 성공하는 코드
