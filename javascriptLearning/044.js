@@ -1,7 +1,6 @@
 function requestData(){
     console.log('requested!!');
 }
-
 let catchedPromise;
 function getData() {
     catchedPromise = catchedPromise || requestData();
