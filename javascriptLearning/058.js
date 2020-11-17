@@ -1,0 +1,1 @@
+const msg = `name: ${name}, score : ${score / 100}`;
